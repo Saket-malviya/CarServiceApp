@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Book a Service";
+}
+
+<h2>Book a Service</h2>
+<form method="post" action="/Service/Booking">
+    <label>Service Type</label>
+    <input type="text" name="ServiceType" required />
+    <label>Date</label>
+    <input type="datetime-local" name="ServiceDate" required />
+    <button type="submit">Book</button>
+</form>
